@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    x:Class="WiFiConnect.MainPage">
+    
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <On Platform="iOS" Value="20, 40, 20, 20" />
+        </OnPlatform>
+    </ContentPage.Padding>
+
+    <ScrollView>
+        <StackLayout>
+            <!--<Image x:Name="LogoPortret" Source="boteyes_logo.png" VerticalOptions="Start" HorizontalOptions="Start" />-->
+            <StackLayout x:Name="Logo" Orientation="Horizontal" >
+                <Label x:Name="stringLandscape"  Text="Connect BotEyes to WiFi:" FontAttributes="Bold" FontSize="Medium" TextColor="DarkCyan" 
+                       VerticalOptions="End" HorizontalOptions="Start"/>
+                <Label x:Name="stringPortret" Text="To connect BotEyes to WiFi:" FontAttributes="Bold" FontSize="Medium" TextColor="DarkCyan" VerticalOptions="End" HorizontalOptions="StartAndExpand"/>
+                <Image x:Name="LogoLandscape"  Source="boteyes_logo.png" VerticalOptions="Start" HorizontalOptions="EndAndExpand"/>
+                <Image x:Name="LogoPortret" Source="boteyes_logo.png" VerticalOptions="Start" HorizontalOptions="Start" />
+            </StackLayout>
+            <StackLayout VerticalOptions="CenterAndExpand" >
+                <!--<Label x:Name="stringPortret" Text="To connect BotEyes to WiFi:" FontAttributes="Bold" FontSize="Medium" TextColor="DarkCyan" VerticalOptions="End" HorizontalOptions="StartAndExpand"/>-->
+                <Label x:Name="string2" Text="- press 'Reset WiFi' button on the Robot chassis (see User Manual) and wait for up to 2 minutes while you can see AJ_SoftAPSsid_... network in the list of available networks of your gadget;" FontAttributes="None" FontSize="Small" />
+                <Label x:Name="string21" Text="- go to Settings/WiFi of your gadget and connect it to AJ_SoftAPSsi... Use network key 'p@ssw0rd', then go back here;" FontAttributes="None" FontSize="Small" />
+                <Label Text="- enter SSID of the network to which you want to connect the robot:" FontAttributes="None" FontSize="Small" />
+                <StackLayout x:Name="SsidField1">
+                    <Entry x:Name="enteredSsid" IsPassword="False" Placeholder = "Net SSID" BackgroundColor="LightGray" HorizontalOptions="FillAndExpand" WidthRequest="150"/>
+                </StackLayout>
+                <Label x:Name="string3" Text="- enter network security key:" FontAttributes="None" FontSize="Small" />
+                <StackLayout x:Name="PasswordField1">
+                    <Entry x:Name="networkKey" IsPassword="True" Placeholder = "Key" BackgroundColor="LightGray" HorizontalOptions="FillAndExpand" WidthRequest="150"/>
+                    <StackLayout x:Name="PasswordField2" Orientation="Horizontal"  >
+                        <Switch x:Name="PasswordViewSwitcher" Toggled="PasswordViewSwitcher_Toggled" VerticalOptions="End" IsToggled="False" HorizontalOptions="Start" />
+                        <Label x:Name="PasswordSwitchLabel" Text="Turn ON to view entered key" VerticalOptions="End" HorizontalOptions="Start" FontAttributes="None" FontSize="Small" />
+                    </StackLayout>
+                </StackLayout>
+                <Button x:Name="StartButton" VerticalOptions="StartAndExpand" Text="Press here to connect" Clicked="ConnectButton_Click" BackgroundColor="DarkCyan" TextColor="White"/>
+                <Label x:Name="string4"  Text="- wait for up to 2 minutes until you will see Status message below" FontAttributes="None" FontSize="Small" />
+            </StackLayout>
+            <Label x:Name="string5"  Text="Status:"/>
+            <StackLayout x:Name="StatusBorder" Grid.Column="1"  Orientation="Vertical" >
+                <Label  x:Name="StatusBlock" Margin="5, 17"  IsVisible="True" VerticalTextAlignment="Center" HorizontalTextAlignment="Start" TextColor="White" />
+            </StackLayout>
+            <Button x:Name="GoToSiteButton" VerticalOptions="CenterAndExpand" Text="Open BotEyes control website" Clicked="buttonGo_Click"  
+                    BackgroundColor="DarkCyan"   TextColor="White"/>
+            <Button x:Name="UserManualButton"  VerticalOptions="CenterAndExpand" Text="User manual for BotEyes" Clicked="manualButton_Clicked"  
+                    BackgroundColor="DarkCyan"   TextColor="White"/>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
