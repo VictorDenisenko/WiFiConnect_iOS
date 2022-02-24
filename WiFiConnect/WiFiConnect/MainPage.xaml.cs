@@ -135,7 +135,7 @@ namespace WiFiConnect
 
         void buttonGo_Click(object sender, EventArgs e)
         {
-            Uri uri = new Uri("https://boteyes.com/DefaultEng.aspx");
+            Uri uri = new Uri("https://boteyes.com/");
             Device.BeginInvokeOnMainThread(() =>
             {
                 Device.OpenUri(uri);
@@ -144,7 +144,7 @@ namespace WiFiConnect
 
         private void manualButton_Clicked(object sender, EventArgs e)
         {
-            Uri uri = new Uri("https://boteyes.com/HelpEng.aspx");
+            Uri uri = new Uri("https://boteyes.com/HelpEng.html");
             Device.BeginInvokeOnMainThread(() =>
             {
                 Device.OpenUri(uri);

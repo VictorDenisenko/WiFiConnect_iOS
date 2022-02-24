@@ -60,7 +60,7 @@ namespace WiFiConnect.iOS
                 }
                 else
                 {
-                    mp.NotifyUser("I am not sure all is OK. See if robot green light diode is On. In other case try again." + CommonStruct.robotIpAddress, MainPage.NotifyType.ErrorMessage);
+                    mp.NotifyUser("I am not sure all is OK. See if the robot is On. In other case try again." + CommonStruct.robotIpAddress, MainPage.NotifyType.ErrorMessage);
                 }
             }
         }

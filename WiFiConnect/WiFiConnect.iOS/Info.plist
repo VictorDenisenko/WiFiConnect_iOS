@@ -27,7 +27,7 @@
 	<key>CFBundleIdentifier</key>
 	<string>com.boteyes.BotEyesWiFi</string>
 	<key>CFBundleVersion</key>
-	<string>1.0</string>
+	<string>2.1</string>
 	<key>CFBundleIconFiles</key>
 	<array>
 		<string>Icon-60@2x</string>
@@ -51,10 +51,13 @@
 	<key>CFBundleName</key>
 	<string>WiFiConnect</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>2.1</string>
 	<key>XSAppIconAssets</key>
 	<string>Assets.xcassets/AppIcons.appiconset</string>
-	<key>XSLaunchImageAssets</key>
-	<string>Assets.xcassets/LaunchImages.launchimage</string>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+	</dict>
 </dict>
 </plist>

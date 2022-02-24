@@ -5,7 +5,7 @@
       "extent": "full-screen",
       "minimum-system-version": "7.0",
       "scale": "1x",
-      "size": "0x0",
+      "size": "768x1024",
       "idiom": "ipad",
       "filename": "WiFi_Icon768x1024.jpg"
     },
@@ -14,7 +14,7 @@
       "extent": "full-screen",
       "minimum-system-version": "7.0",
       "scale": "1x",
-      "size": "0x0",
+      "size": "1024x768",
       "idiom": "ipad",
       "filename": "WiFi_IconBig1024x768.jpg"
     },
@@ -23,7 +23,7 @@
       "extent": "full-screen",
       "minimum-system-version": "7.0",
       "scale": "2x",
-      "size": "0x0",
+      "size": "1536x2048",
       "idiom": "ipad",
       "filename": "WiFi_Icon1536x2048.jpg"
     },
@@ -32,7 +32,7 @@
       "extent": "full-screen",
       "minimum-system-version": "7.0",
       "scale": "2x",
-      "size": "0x0",
+      "size": "2048x1536",
       "idiom": "ipad",
       "filename": "WiFi_IconBig2048x1536.jpg"
     },
@@ -41,7 +41,7 @@
       "extent": "full-screen",
       "minimum-system-version": "7.0",
       "scale": "2x",
-      "size": "0x0",
+      "size": "640x960",
       "idiom": "iphone",
       "filename": "WiFi_IconBig640x690.jpg"
     },
@@ -51,7 +51,7 @@
       "minimum-system-version": "7.0",
       "subtype": "retina4",
       "scale": "2x",
-      "size": "0x0",
+      "size": "640x1136",
       "idiom": "iphone",
       "filename": "WiFi_IconBig640x1136.jpg"
     }
